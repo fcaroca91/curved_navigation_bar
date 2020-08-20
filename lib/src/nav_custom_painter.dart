@@ -18,7 +18,8 @@ class NavCustomPainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     final paint = Paint()
       ..color = color
-      ..style = PaintingStyle.fill;
+      ..style = PaintingStyle.stroke
+      ..strokeWidth = 1;
 
     final path = Path()
       ..moveTo(0, 0)
